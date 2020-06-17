@@ -46,8 +46,7 @@ comunicação
    - Microcomputadores com maior poder computacional
      - CPU 8, 16, 32 e 64 bits
      - HyperThreading e MultiCore (devido à limitação de 3.4 GHz na freqüência)
-     - Nota: Lançado esta semana processador de 80 core (1.01 TFlops)
-         - Pentium M 1.4GHz – 149 MFlops     
+     - Pentium M 1.4GHz – 149 MFlops     
    - Redes de alta velocidade
      - Local Area Network – LAN
      - Wide Area Network – WAN  
@@ -57,7 +56,7 @@ comunicação
 - **Vários componentes conectados via uma rede**
 - **Compartilhamento de recursos**
 - **Transparência**
-    - O sistema deve ser visto como um todo e não como uma colecção de componentes distribuídos.
+    - O sistema deve ser visto como um todo e não como uma coleção de componentes distribuídos.
 - **Flexibilidade ou Escalabilidade**
     - Sistemas distribuídos são capazes de crescimento incremental.
     - Idealmente, sistemas distribuídos não devem ter qualquer componente centralizado (cuja capacidade impõe limites para o tamanho máximo de um sistema), tal que a restrição ao crescimento não deve existir.
@@ -81,14 +80,17 @@ comunicação
     - Não é necessário saber quantas cópias do recurso existem. 
     - Utilização de várias instâncias de um componente pode ocorrer por razões de desempenho ou de confiabilidade.
 - **Tolerância a falhas**
-    - Esconde a falha e recuperação de um recurso. Garante tolerância a falhas, facilitando a manutenção e aumentando a segurança, já que cada nó é independente.
+    - Esconde a falha e recuperação de um recurso facilitando a manutenção e aumentando a segurança, já que cada nó é independente.
 - **Migração**
     - Recursos podem mudar de lugar sem a alteração de nomes
 - **Paralelismo** 
     - Várias atividades podem ocorrer simultaneamente sem o conhecimento dos usuário 
--	**Interoperabilidade:** capacidade de interação entre aplicações e componentes distintos através de um padrão 
--	**Portabilidade:** capacidade de execução de uma aplicação em diversos sistemas sem modificação.
--	**Transparência da distribuição:** garante a apresentação ao usuário como um único sistema, podendo ser aplicado em diversos aspectos dentro do sistema. Para tanto, utiliza-se de Middleware que conecta os módulos do sistema em uma única camada, sendo essa a apresentada ao usuário.
+- **Interoperabilidade:** 
+    - Capacidade de interação entre aplicações e componentes distintos através de um padrão 
+- **Portabilidade:** 
+    - Capacidade de execução de uma aplicação em diversos sistemas sem modificação.
+- **Transparência da distribuição:** 
+    - Garante a apresentação ao usuário como um único sistema, podendo ser aplicado em diversos aspectos dentro do sistema. Para tanto, utiliza-se de Middleware que conecta os módulos do sistema em uma única camada, sendo essa a apresentada ao usuário.
 
 - **Sistema Aberto (“Openness”)**
     - Capacidade de o sistema ser extensível, quer em hardware quer em software
