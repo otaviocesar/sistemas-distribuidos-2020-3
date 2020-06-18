@@ -62,18 +62,19 @@
              
          
    
-- **Multiprocessadores baseados em barramento.**   
+- **Multiprocessadores baseados em barramento**
+
 Consiste em um número de CPUs (que pode ter alguma memória local - cache) ligadas através de um barramento. Sem caches locais, o barramento tende a ser sobrecarregado rapidamente. Solução: adicionar caches locais. Novo problema: A coerência dos dados que estão armazenados em cada cache é fundamental. Cache write-trough: Toda escrita na cache acarreta em escrita na memória. Escritas sempre geram tráfego no barramento, enquanto que leituras só geram tráfego quando a palavra não está na cache (cache miss). Para manter  consistência, as outras caches escutam o barramento e invalidam as posições que são escritas por outras caches na memória (snoopy caches). Um design deste tipo é coerente e invisível ao programador. É um esquema difícil de funcionar com um grande número de processadores.
 
-- **Multiprocessadores com switch**   
+- **Multiprocessadores com switch**
 
 Podem ser usados com barras cruzadas ou com pontos de cruzamento. Memórias são localizadas de um lado e os processadores do outro. Caminho em uma comunicação é switched e a memória em questão tem o acesso bloqueado para os outros processadores. Número de switches pode tornar custo do sistema proibitivo. Rede ômega diminui número de switches necessários de n2 para n log2n. O retardo em redes ômegas com muitos níveis pode se tornar considerável, ou o seu custo caso switches ultra-rápidos sejam utilizados. Solução: contruir um sistema que use uma hierarquia de memórias. Um design deste tipo é o NonUniform Memory Access (NUMA) onde cada CPU tem uma memória local além de memórias que server a várias CPUs. O retardo diminui, mas a localização de software se torna crucial para o bom funcionamento do sistema.
 
-- **Multicomputadores baseados em barramento**   
+- **Multicomputadores baseados em barramento**
 
 Conjunto de CPUs com memória local trocando mensagens através de um barramento. Rede local ou CPUs conectadas com um barramento rápido.
 
-- **Multicomputadores com switch.**  
+- **Multicomputadores com switch.**
 
 CPUs tem um certo número de conexões para outras CPUs e mensagens são trocadas através de CPUs que intermediam a comunicação quando necessário. Abaixo estão as topologias de grid e hipercubo. No grid, número de conexões e número máximo de passos em uma comunicação cresce com a raiz quadrada do número de CPUs enquanto que no hipercubo esse número cresce com o logaritmo do tamanho. Atualmente já são usados grids com dezenas de milhares CPUs. A Teragrid conecta milhares de computadores usando uma rede de 40 Gb/s.
 
