@@ -52,11 +52,40 @@ tratar processos defeituosos, segurança, etc.
 
      - “Application Layer” - consiste de aplicações que operam dentro da organização virtual e as quais são responsáveis pelo ambiente de computação em “grid”.
 
-**Sistemas de Informação Distribuídos** 
+### Sistemas de Informação Distribuídos
+
+- Outra importante classe de sistemas distribuídos é encontrada em organizações que foram confrontadas com a qualidade das aplicações de rede, mas para as quais a interoperabilidade acabou por se tornar a experiência dolorosa.
+
 - Processamento de Transações  
+
 - Integração de Aplicações Empresarias (EAI – Enterprise Application Integration)  
 
-**Sistemas Distribuídos Pervasivos**   
+- Podemos distinguir vários níveis de integração:
+          - Integração no baixo nível – pode contemplar o agrupamento de requisições em uma requisição maior de modo que seja
+          executada como uma transação distribuída;
+          - Integração de alto nível - “enterprise application integration”
+
+### Sistemas Distribuídos Pervasivos
+
+- Sistemas Distribuídos em que nós são pequenos, mantidos por bateria, móveis, passíveis de conexão através de rede sem fio e geralmente embutidos em um sistema maior.
+
 - Domésticos 
 - Eletrônicos  para  Tratamento  de  Saúde 
 - Redes de Sensores
+
+- Requisitos para Aplicações Pervasivas (Difusas):
+          - Troca contextual – o sistema é parte de um ambiente em que mudanças devem ser rapidamente percebidas.
+          - Composição ad hoc – cada nó pode ser usado de diferentes formas por diferentes usuários, no entanto, requer facilidade de configuração;
+          - Compartilhamento é o padrão – nós entram e saem provendo serviço compartilhado e informação.
+          
+- Home Systems – devem contemplar a auto configuração e o auto gerenciamento, ou seja, não deve ser necessário a existência de um administrador e o sistema ao mesmo tempo deve prover espação pessoal para cada usuário.
+
+- Health Care Systems – são sistemas equipados com sensores organizados sobre o corpo humano (BAN – Body Area Network).
+
+- Um requisito importante é o de não impedir ou limitar os movimentos da pessoa, ou seja, ausência de fios ligados aos dipositivos/sensores da rede.
+
+- Estes requisitos conduzem a 02 cenários: hub central com parte da rede; todos os componentes/sensores ligados preferencialmente via rede sem fio a uma rede externa.
+
+- Estes requisitos conduzem a 02 cenários: hub central com parte da rede; todos os componentes/sensores ligados preferencialmente via rede sem fio a uma rede externa.
+
+
