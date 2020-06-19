@@ -10,13 +10,14 @@
 ### Sistemas de Computação Distribuídos
 
 - Utilizados para tarefas de computação de alto desempenho 
+
 - Uma classe importante de Sistemas Distribuídos está configurada para Computação de Alto Desempenho, que por sua vez pode ser subdividida em: Computação em Cluster e Computação em Grid.
 
 **Cluster** 
 
 - Os sistemas computacionais são consistidos de um coleção de estações de trabalho similares, fortemente conectadas por uma rede de alta velocidade com um nó funcionando como gerenciador.
 
-– Virtualmente em todos os casos, computação em cluster é utilizada para programação paralela na qual um único programa é executado em paralelo em múltiplas máquinas.
+- Virtualmente em todos os casos, computação em cluster é utilizada para programação paralela na qual um único programa é executado em paralelo em múltiplas máquinas.
 
 - Linux-based Beowulf Cluster - uma parte importante do “middleware” é constituída por bibliotecas responsáveis pela execução de programas em paralelo. Neste contexto, muitas destas bibliotecas provêem comunicação baseada em mensagens, mas não são hábeis para
 tratar processos defeituosos, segurança, etc.
