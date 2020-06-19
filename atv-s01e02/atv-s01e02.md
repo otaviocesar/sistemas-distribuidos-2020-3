@@ -77,23 +77,3 @@ Conjunto de CPUs com memória local trocando mensagens através de um barramento
 - **Multicomputadores com switch.**
 
 CPUs tem um certo número de conexões para outras CPUs e mensagens são trocadas através de CPUs que intermediam a comunicação quando necessário. Abaixo estão as topologias de grid e hipercubo. No grid, número de conexões e número máximo de passos em uma comunicação cresce com a raiz quadrada do número de CPUs enquanto que no hipercubo esse número cresce com o logaritmo do tamanho. Atualmente já são usados grids com dezenas de milhares CPUs. A Teragrid conecta milhares de computadores usando uma rede de 40 Gb/s.
-
-### Tipos de Sistemas Distribuídos
-
-**Sistemas de Computação Distribuídos** 
-- Utilizados para tarefas de computação de alto desempenho 
-- Cluster
-- Grade (Grid) 
-
-**Sistemas de Informação Distribuídos** 
-- Processamento de Transações  
-- Integração de Aplicações Empresarias (EAI – Enterprise Application Integration)  
-
-**Sistemas Distribuídos Pervasivos**   
-- Domésticos 
-- Eletrônicos  para  Tratamento  de  Saúde 
-- Redes de Sensores
-
-         
-            
-            
