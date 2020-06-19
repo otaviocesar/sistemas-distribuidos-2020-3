@@ -88,4 +88,49 @@ tratar processos defeituosos, segurança, etc.
 
 - Estes requisitos conduzem a 02 cenários: hub central com parte da rede; todos os componentes/sensores ligados preferencialmente via rede sem fio a uma rede externa.
 
+### Middleware
 
+**O que é?** 
+
+- Camada de software que permite a comunicação entre aplicações (distribuídas)
+
+- Um conjunto de serviços que fornece comunicação e distribuição de forma transparente à aplicação
+
+- Componentes
+          - ambiente de programação
+          - ambiente de execução
+ 
+ **Contexto** 
+
+- O middleware está localizado entre as camadas de aplicação e transporte
+- O middleware implementa seus próprios protocolos
+          - Protocolos que suportam os serviços fornecidos pelo middleware (ex., protocolos de autenticação)
+          
+ **Serviços Fornecidos** 
+ 
+- Comunicação
+          - esconde os detalhes da rede (ex. Chamada de procedimento remoto,invocação de objeto.)
+- Serviço de nomes
+          - ex., páginas brancas
+- Transações
+          - ex., atomicidade
+- Segurança
+          - a camada de middleware deve implementar mecanismos de segurança
+          
+**Modelos**
+
+- Middleware orientado à transação
+
+- Remote Procedure Call
+
+- Middleware reflexivo
+
+- Middleware baseado em eventos
+
+- Middleware orientado a objetos
+
+- Middleware orientado a mensagem
+
+- Middleware multimídia
+
+- Middleware para sistema móveis          
