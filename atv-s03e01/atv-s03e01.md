@@ -36,6 +36,16 @@
 
 ### Ordenando Mensagens
 
+A ordenação de mensagens é um ponto muito importante na comunicação em grupo e assim vamos detalhar mais este assunto baseado nos conceitos de ordenação de mensagens em serviços de broadcast (BROADCAST, 1997), (ATTIYA, 1998), (MULLENDER, 1993), e também no sist ema AMOEBA (KAASHOEK, 1993). Existem quatro tipos diferentes de ordenação que normalmente estão implementadas nos mecanismos de comunicação de grupo:
+
+- **Sem Ordem** – Onde as mensagens são enviadas ao grupo sem a preocupação de ordenamento. Tem o menor overhead pois não necessita controle algum de seqüência porém pode não ser adequado para muitas aplicações.
+- Ordenamento FIFO – Garante que todas as mensagens de um membro sejam entregues aos demais membros do grupo na ordem em que elas foram enviadas. Para todas as mensagens M1 e M2 e todos os processos Pi e Pj, se Pi envia M1 antes de enviar M2, então M2 não é recebida em Pj antes que M1 seja recebida.
+
+- **Ordenamento CAUSAL** – No ordenamento causal introduz-se o conceito de mensagem dependente de outra. Um exemplo par a ilustrar, é quando se recebem mensagens de uma lista na Internet. Um membro da lista envia uma pergunta para a lista, esta mensagem é enviada a todos os membros da lista. Na seqüência alguém responde a solicitação e esta resposta também é enviada a todos. Na caixa postal de um participante da lista chega primeiro a mensagem com a resposta e mais tarde a mensagem com a pergunta. No ordenamento causal as mensagens estão em ordenamento FIFO e se um membro após receber a mensagem A envia uma mensagem B, é garantido a todos os membros do grupo que vão receber A antes de B. Para todas as mensagens M1 e M2 e cada processo Pi, se M1 acontece antes de M2 então M2 não é recebida em Pi antes que M1 seja. A Figura 25 apresenta um exemplo gráfico de ordenamento causal. Nesta execução duas mensagens são controladas em termos de entrega. Primeiro a mensagem de p1 (0,2,0) é atrasada até que a mensagem anterior (0,1,0) chegue vinda de p1. Depois a mensagem (1,3,0) vinda de p0 é atrasada até que a mensagem (0,3,0) vinda de p1 (que aconteceu antes) tenha chegado.
+
+
+- **Ordenamento Total** – No ordenamento total cada membro do grupo recebe todas as mensagens na mesma ordem. Para todas as mensagens M1 e M2 e todos os processos Pi e Pj, se M1 é recebida em Pi antes que M2 seja, então M2 não é recebida em Pj antes que M1 seja. Este ordenamento total é o melhor de todos aqui apresentados e torna a programação fácil, mas é difícil de ser implementado.
+
 - Global Time Ordering - todas as mensagens chegam na ordem exata em que foram enviadas (não é facil de ser implementado)
 - Consistent Time Ordering - se duas mensagens são enviadas em tempos próximos, o sistema pega uma delas como sendo a “primeira” e envia a todos os membros do grupo segundo esta ordem (é garantido que as mensagens cheguem a todos os membros do grupo na mesma ordem; que podem não ser a ordem real)
 
