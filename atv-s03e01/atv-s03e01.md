@@ -28,18 +28,18 @@
 - Quando um processo deixa o grupo, envia uma mensagem de “goodbye” para todos os outros membros.
 - Problema: Se um membro falha ele deixa o grupo sem o “goodbye”. Os outros membros tem que descobrir isso experimentalmente e removê-lo do grupo
 
-###Atomicidade
+### Atomicidade
 
 - Quando uma mensagem é enviada para um grupo, ela chega corretamente para todos os membros do grupo ou não chega para nenhum membro.
 - Uma maneira de ter certeza que todos os destinatários receberam a mensagem é implementar o envio do ACK para cada mensagem recebida (Sem falhas esse método funciona)
 - Com falhas - processo que envia msg inicia timers e envia retransmissões quando necessário. Quando um processo recebe uma msg, e não a havia visto ainda, envia a msg para todos os membros do grupo – problema: sobrecarga.
 
-###Ordenando Mensagens
+### Ordenando Mensagens
 
 - Global Time Ordering - todas as mensagens chegam na ordem exata em que foram enviadas (não é facil de ser implementado)
 - Consistent Time Ordering - se duas mensagens são enviadas em tempos próximos, o sistema pega uma delas como sendo a “primeira” e envia a todos os membros do grupo segundo esta ordem (é garantido que as mensagens cheguem a todos os membros do grupo na mesma ordem; que podem não ser a ordem real)
 
-###Peer 2 Peer
+### Peer 2 Peer
 
 - Aplicações Peer-to-peer distribuem a informação entre seus nós membros em lugar de concentrar em um único servidor.
 - Não há a necessidade de nenhum elemento coordenador ou centrali-ador de recursos ou políticas
@@ -58,7 +58,7 @@
 - Idéia é buscar vizinhos mais “próximos”, evitando a
 latência da comunicação
 
-###Requisitos de Peer to Peer
+### Requisitos de Peer to Peer
 
 - Dinamicidade dos hosts
 - Peers podem entrar e sair do sistema a qualquer momento
@@ -70,7 +70,7 @@ latência da comunicação
 - Capacidade de negar o compartilhamento de um arquivo
 - Possibilidade de não realizar download de conteúdo protegido
 
-###Aplicações
+### Aplicações
 
 - Aplicações de Computação Distribuída muitas vezes se enquadram na categoria P2P tal como SETI@home que utiliza milhões de clientes Internet para procura de vida extraterrestre. É implementado como um screen saver (setiathome.ssl.berkeley.edu)
 - Outras aplicações nesta categoria incluem sistemas para modelagem financeira, bioinformática, teste de desempenho Web. Estes sistemas aproveitam o tempo ocioso da máquina dos clientes para realizar computações de forma distribuída.
@@ -78,7 +78,7 @@ latência da comunicação
 - Nas aplicaçãos colaborativas existe interação entre clientes em torno de uma atividade comum que podem ser jogos ou simulações.
 - Um exemplo é o “White Board”que é uma aplicação onde cada cliente pode alterar desenhos ou textos e todos os demais visualizam e podem também fazer alterações.
 
-###Estudo de Caso: Napster
+### Estudo de Caso: Napster
 
 - 1o sistema Peer to Peer a ser altamente popularizado
 - Troca exclusiva de músicas, principalmente em formato MP3
