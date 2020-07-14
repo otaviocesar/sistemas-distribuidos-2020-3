@@ -1,0 +1,19 @@
+{
+  "name": "pedido-lanches-mqtt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "node client.js",
+    "server": "node server.js",
+    "start": "node server.js"
+  },
+  "author": "Otavio Cesar",
+  "dependencies": {
+    "mqtt": "^4.1.0",
+    "readline-sync": "^1.4.10",
+    "snap": "^1.1.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
